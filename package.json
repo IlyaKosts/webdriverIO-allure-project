@@ -21,7 +21,7 @@
         "firefox-st": "npx kill-port 4444 && wdio run ./configFiles/firefox.conf.js --spec ./test/specs/storageTests.js && allure generate allure-results/ --clean && allure open",
         "test:headless": "npx wdio wdio.chrome.headless.conf.js",
         "allure:serve": "npx allure serve allure-results",
-        "allure:generate": "npx allure generate allure-results --clean"
+        "allure:generate": "npx allure generate allure-results --clean --reportDir public --assetsDir public/assets --reportPageTitle index.html"
     },
     "dependencies": {
         "allure-commandline": "^2.18.1"
