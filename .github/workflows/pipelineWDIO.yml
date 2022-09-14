@@ -1,4 +1,4 @@
-name: CI
+name: pipelene for webdriverIO
 on: [push, pull_request]
 jobs:
   build:
@@ -11,14 +11,18 @@ jobs:
             node-version: 12
         - name: Install
           run: npm install
-        - name: user
+        - name: User config
           run: npm config set user 0
-        - name: permission
+        - name: Permission
           run: npm config set unsafe-perm true
         - name: Test
           run: npm run test:headless
-        - uses: actions/upload-artifact@v1
-          if: failure()
+        - name: Generate HTML report
+          run: npm run report:generate
+        - name: Deploy report page
+          uses: peaceiris/actions-gh-pages@v3
           with:
-            name: logs
-            path: logs
+           github_token: ${{ secrets.GITHUB_TOKEN }}
+           publish_dir: ./public
+           user_name: 'github-actions[bot]'
+           user_email: 'github-actions[bot]@users.noreply.github.com'
