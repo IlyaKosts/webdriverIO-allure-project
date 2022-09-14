@@ -16,7 +16,7 @@ jobs:
         - name: Permission
           run: npm config set unsafe-perm true
         - name: Test
-          run: npm run test:headless
+          run: npm run cross:headless
         - name: Generate HTML report
           run: npm run allure:generate
         - name: Upload Results
