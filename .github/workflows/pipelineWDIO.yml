@@ -19,10 +19,22 @@ jobs:
           run: npm run test:headless
         - name: Generate HTML report
           run: npm run allure:generate
+        - name: Upload Results
+          uses: actions/upload-artifact@v1
+          if: always()
+          with:
+           name: allure-results
+           path: ./allure-results # Name of the folder with allure results
+        - name: Publishing Allure artifact to Github Actions
+          uses: actions/upload-artifact@v2
+          if: always()
+          with:
+           name: allure-report
+           path: allure-report
         - name: Deploy report page
           uses: peaceiris/actions-gh-pages@v3
           with:
            github_token: ${{ secrets.GITHUB_TOKEN }}
-           publish_dir: ./allure-report
+           publish_dir: allure-report
            user_name: 'github-actions[bot]'
            user_email: 'github-actions[bot]@users.noreply.github.com'
