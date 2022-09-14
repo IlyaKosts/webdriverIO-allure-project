@@ -10,9 +10,23 @@
         "@wdio/selenium-standalone-service": "^7.24.0",
         "@wdio/spec-reporter": "^7.24.0",
         "chromedriver": "^105.0.0",
+        "cross-env": "^7.0.3",
         "wdio-chromedriver-service": "^7.3.2"
     },
     "scripts": {
+        "cross:1c":"cross-env TEST_ENV=firstUser npm run chrome",
+        "cross:2c":"cross-env TEST_ENV=secondUser npm run chrome",
+        "cross:1f":"cross-env TEST_ENV=firstUser npm run firefox",
+        "cross:2f":"cross-env TEST_ENV=secondUser npm run firefox",
+        "cross:1c-wl":"cross-env TEST_ENV=firstUser npm run chrome-wl",
+        "cross:2c-wl":"cross-env TEST_ENV=secondUser npm run chrome-wl",
+        "cross:1f-wl":"cross-env TEST_ENV=firstUser npm run firefox-wl",
+        "cross:2f-wl":"cross-env TEST_ENV=secondUser npm run firefox-wl",
+        "cross:1c-st":"cross-env TEST_ENV=firstUser npm run chrome-st",
+        "cross:2c-st":"cross-env TEST_ENV=secondUser npm run chrome-st",
+        "cross:1f-st":"cross-env TEST_ENV=firstUser npm run firefox-st",
+        "cross:2f-st":"cross-env TEST_ENV=secondUser npm run firefox-st",
+        "cross:headless":"cross-env TEST_ENV=firstUser npm run test:headless",
         "chrome": "wdio run ./configFiles/chrome.conf.js && allure generate allure-results/ --clean && allure open",
         "chrome-wl": "wdio run ./configFiles/chrome.conf.js --spec ./test/specs/waitlistTests.js && allure generate allure-results/ --clean && allure open",
         "chrome-st": "wdio run ./configFiles/chrome.conf.js --spec ./test/specs/storageTests.js && allure generate allure-results/ --clean && allure open",
@@ -24,6 +38,8 @@
         "allure:generate": "npx allure generate allure-results --clean"
     },
     "dependencies": {
-        "allure-commandline": "^2.18.1"
+        "allure-commandline": "^2.18.1",
+        "chai": "^4.3.6",
+        "dotenv": "^16.0.2"
     }
 }

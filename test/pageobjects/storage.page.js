@@ -1,3 +1,33 @@
+let FN;
+let LN;
+let EM;
+let IEM;
+let DSC;
+if(process.env.TEST_ENV==="firstUser") {
+    FN = "FakeFirstUserName";}
+    else if(process.env.TEST_ENV==="secondUser"){
+    FN = "FakeSecondUserName";
+};
+if(process.env.TEST_ENV==="firstUser") {
+    LN = "FakeFirstUserLastName";
+} else if(process.env.TEST_ENV==="secondUser"){
+    LN = "FakeSecondUserLastName";
+};
+if(process.env.TEST_ENV==="firstUser") {
+    EM= "fakeFirstUEmail@gmail.com";
+} else if(process.env.TEST_ENV==="secondUser"){
+    EM = "fakeSecondUEmail@gmail.com";
+};
+if(process.env.TEST_ENV==="firstUser") {
+    IEM= "InvalidFakeFirstUEmail";
+} else if(process.env.TEST_ENV==="secondUser"){
+    IEM = "InvalidFakeSecondUEmail";
+};
+if(process.env.TEST_ENV==="firstUser") {
+    DSC= "Not real description for the first user.";
+} else if(process.env.TEST_ENV==="secondUser"){
+    DSC = "Not real description for the second user.";
+};
 class StoragePage {
     get form (){return $('[id="form"][class="sc-93eced66-0 ARKBf"]')};
     get firstName (){return $('#FirstName')};
@@ -22,7 +52,6 @@ class StoragePage {
     get benefitsImg1 (){return $('[src="//images.ctfassets.net/taysl255dolk/16H2dMsouTqN4PvyunK45Q/9ddad63b4222a61d6fb9b22e658f0808/Teaser_PaymentTiers.svg"]')};
     get benefitsImg2 (){return $('[src="//images.ctfassets.net/taysl255dolk/TuGUsusfpffC1zKIxHkIn/46dbb35217db90d49d928ee61dacd9af/Teaser_FastStorage_2x.png"]')};
     get benefitsImg3 (){return $('[src="//images.ctfassets.net/taysl255dolk/4RZ1jBpvqr5iru32wLRfG9/b601c3569a7a4de97d07486181b056a1/DeveloperDocs_Hero_CloudStorage.svg"]')};
-    get benefitsImg4 (){return $('[src="//images.ctfassets.net/taysl255dolk/36unljOkVRQ7Cid3iajVRP/d919510c42d1cddbad322088a7813940/Teaser_FilecoinNetworkVerify.svg"]')};
     get pricingTable (){return $('div[class="Text-sc-5o8owa-0 sc-31400ea3-4 ijJVSH blWpIH"] table')};
     get pricingText (){return $('[id="pricing"] div[class="Text-sc-5o8owa-0 sc-31400ea3-4 ijJVSH blWpIH"] span')};
     get pricingJointBtn (){return $('[class="sc-93eced66-0 hUCqQg"] a')};
@@ -38,20 +67,24 @@ class StoragePage {
     get bottomTopics (){return $('div[class="sc-7b6c9f9b-2 jSHfbB"] p')};
     get bottomElem (){return $('div[class="sc-7b6c9f9b-2 jSHfbB"] li')};
     get bottomLogo (){return $('div[class="sc-7b6c9f9b-10 kxxJtg"]')};
+
     async scrollToForm () {
         await this.form.scrollIntoView();
     };
-    async enterFN (string) {
-        await this.firstName.setValue(string);
+    async enterFN () {
+        await this.firstName.setValue(FN);
     };
-    async enterLN (string) {
-        await this.lastName.setValue(string);
+    async enterLN () {
+        await this.lastName.setValue(LN);
     };
-    async enterEmail (string) {
-        await this.email.setValue(string);
+    async enterEmail () {
+        await this.email.setValue(EM);
     };
-    async enterDescription (string) {
-        await this.description.setValue(string);
+    async enterInvEmail () {
+        await this.email.setValue(IEM);
+    };
+    async enterDescription () {
+        await this.description.setValue(DSC);
     };
     async applyBtnClick () {
         await this.applyBtn.click();
