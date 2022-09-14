@@ -11,6 +11,10 @@ jobs:
             node-version: 18
         - name: Install
           run: npm install
+        - name: user
+          run: npm config set user 0
+        - name: permission
+          run: npm config set unsafe-perm true
         - name: Test
           run: npm run test:headless
         - uses: actions/upload-artifact@v1
