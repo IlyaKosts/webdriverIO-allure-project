@@ -1,0 +1,161 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663116528003' stop='1663116578390'>
+    <name>Test suit for waitlist form.</name>
+    <title>Test suit for waitlist form.</title>
+    <test-cases>
+        <test-case start='1663116528003' status='passed' stop='1663116534436'>
+            <name>Accept coookies feature.</name>
+            <title>Accept coookies feature.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116534437' status='passed' stop='1663116541897'>
+            <name>TC#1: Waitlist form check (empty values).</name>
+            <title>TC#1: Waitlist form check (empty values).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116541897' status='passed' stop='1663116545666'>
+            <name>TC#2: Waitlist form check (Filled fields, invalid email).</name>
+            <title>TC#2: Waitlist form check (Filled fields, invalid email).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116545666' status='passed' stop='1663116550467'>
+            <name>TC#3: Waitlist form check (Filled fields, decription empty).</name>
+            <title>TC#3: Waitlist form check (Filled fields, decription empty).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116550467' status='passed' stop='1663116553467'>
+            <name>TC#4: Waitlist form check (Only first name entered).</name>
+            <title>TC#4: Waitlist form check (Only first name entered).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116553467' status='passed' stop='1663116556998'>
+            <name>TC#5: Waitlist form check (Only last name entered).</name>
+            <title>TC#5: Waitlist form check (Only last name entered).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116556998' status='passed' stop='1663116561395'>
+            <name>TC#6: Waitlist form check (Only email (valid) entered).</name>
+            <title>TC#6: Waitlist form check (Only email (valid) entered).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116561397' status='passed' stop='1663116566545'>
+            <name>TC#7: Waitlist form check (Only email (invalid) entered).</name>
+            <title>TC#7: Waitlist form check (Only email (invalid) entered).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116566545' status='passed' stop='1663116570286'>
+            <name>TC#8: Waitlist form check (Only description entered).</name>
+            <title>TC#8: Waitlist form check (Only description entered).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116570289' status='passed' stop='1663116574156'>
+            <name>TC#9: Waitlist form check (Only first name empty).</name>
+            <title>TC#9: Waitlist form check (Only first name empty).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116574157' status='passed' stop='1663116578387'>
+            <name>TC#10: Waitlist form check (Only last name empty).</name>
+            <title>TC#10: Waitlist form check (Only last name empty).</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='firefox-104.0.2'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

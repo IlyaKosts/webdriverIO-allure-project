@@ -1,0 +1,161 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1663116392608' stop='1663116422374'>
+    <name>Test suit for storage page.</name>
+    <title>Test suit for storage page.</title>
+    <test-cases>
+        <test-case start='1663116392609' status='passed' stop='1663116398125'>
+            <name>Accept coookies feature.</name>
+            <title>Accept coookies feature.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116398125' status='passed' stop='1663116400561'>
+            <name>TC#1: Check text and image on storage paragraph.</name>
+            <title>TC#1: Check text and image on storage paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116400562' status='passed' stop='1663116402647'>
+            <name>TC#2: Check joint button on storage paragraph.</name>
+            <title>TC#2: Check joint button on storage paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116402647' status='passed' stop='1663116404747'>
+            <name>TC#3: Check text and image on how telnyx storage works paragraph.</name>
+            <title>TC#3: Check text and image on how telnyx storage works paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116404747' status='passed' stop='1663116407053'>
+            <name>TC#4: Check joint button on how telnyx storage works paragraph.</name>
+            <title>TC#4: Check joint button on how telnyx storage works paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116407054' status='passed' stop='1663116410980'>
+            <name>TC#5: Check text and image on use case paragraph.</name>
+            <title>TC#5: Check text and image on use case paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116410980' status='passed' stop='1663116413099'>
+            <name>TC#6: Check text and image on benefits paragraph.</name>
+            <title>TC#6: Check text and image on benefits paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116413099' status='passed' stop='1663116415607'>
+            <name>TC#7: Check text and image on pricing paragraph.</name>
+            <title>TC#7: Check text and image on pricing paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116415608' status='passed' stop='1663116417988'>
+            <name>TC#8: Check text and image on dropdown elements in Frequently Asked Questions paragraph.</name>
+            <title>TC#8: Check text and image on dropdown elements in Frequently Asked Questions paragraph.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116417988' status='passed' stop='1663116419938'>
+            <name>TC#9: Check elements on the bottom of the page.</name>
+            <title>TC#9: Check elements on the bottom of the page.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+        <test-case start='1663116419938' status='passed' stop='1663116422373'>
+            <name>TC#10: Check the Telnyx logo on the bottom of the page.</name>
+            <title>TC#10: Check the Telnyx logo on the bottom of the page.</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome-105.0.5195.102'/>
+            </parameters>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

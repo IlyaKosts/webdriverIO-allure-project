@@ -1,0 +1,29 @@
+{
+    "name": "webdriverio-tests",
+    "version": "0.1.0",
+    "private": true,
+    "devDependencies": {
+        "@wdio/allure-reporter": "^7.24.0",
+        "@wdio/cli": "^7.24.0",
+        "@wdio/local-runner": "^7.24.0",
+        "@wdio/mocha-framework": "^7.24.0",
+        "@wdio/selenium-standalone-service": "^7.24.0",
+        "@wdio/spec-reporter": "^7.24.0",
+        "chromedriver": "^105.0.0",
+        "wdio-chromedriver-service": "^7.3.2"
+    },
+    "scripts": {
+        "chrome": "wdio run ./configFiles/chrome.conf.js && allure generate allure-results/ --clean && allure open",
+        "chrome-wl": "wdio run ./configFiles/chrome.conf.js --spec ./test/specs/waitlistTests.js && allure generate allure-results/ --clean && allure open",
+        "chrome-st": "wdio run ./configFiles/chrome.conf.js --spec ./test/specs/storageTests.js && allure generate allure-results/ --clean && allure open",
+        "firefox": "npx kill-port 4444 && wdio run ./configFiles/firefox.conf.js && allure generate allure-results/ --clean && allure open",
+        "firefox-wl": "npx kill-port 4444 && wdio run ./configFiles/firefox.conf.js --spec ./test/specs/waitlistTests.js && allure generate allure-results/ --clean && allure open",
+        "firefox-st": "npx kill-port 4444 && wdio run ./configFiles/firefox.conf.js --spec ./test/specs/storageTests.js && allure generate allure-results/ --clean && allure open",
+        "test:headless": "npx wdio wdio.chrome.headless.conf.js",
+        "allure:serve": "npx allure serve allure-results",
+        "allure:generate": "npx allure generate allure-results --clean"
+    },
+    "dependencies": {
+        "allure-commandline": "^2.18.1"
+    }
+}
